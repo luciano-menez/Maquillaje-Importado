@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beautiful Imported Makeup</title>
+    <!--bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6c3a10766a.js" crossorigin="anonymous"></script>
+
+
+    <!--OWN CSS-->
+    <link rel="stylesheet" href="/css/main.css">
+
+
+</head>
+<!-- navbar -->
+
+<body data-spy="scroll" data-bs-target=".navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="/Asset/Logotipo.png" height="93px;" width="93px;" alt="site icon">
+            </a>
+            <div class="order-lg-2">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 star-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 star-100 translate-middle badge bg-primary">3</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#header">Inicio</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#products">Los mas Vendidos</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="new-revenue">Nuevos Ingresos </a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#offers">Descuentos</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#blog">Referencias</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="#about">Sobre nosotras</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fin nabvar -->
+    <!-- header carousel -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center  carousel-item active">
+                <h2 class="text-capitalize text-white">mejor coleccion</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white" style="margin-left: 27px;">los recién llegados</h1>
+                <a href="#" id="a_1" class="btn mt-3 text-uppercase">Compra Ahora</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">mejor precio 🙴 oferta </h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white" style="margin-left: 27px;">Nueva temporada</h1>
+                <a href="#" id="a_1" class="btn mt-3 text-uppercase">Compra Ahora</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide-to="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide-to="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </header>
+    <!-- end of header -->
+
+    <!-- products -->
+
+    <section id="products" class="products">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-content text-center">
+                        <h2> Los Mas Vendidos</h2>
+                        <p class=text-dark> Bellisima MakeUp es más que una marca de Belleza. Cuando decimos "Nosotras
+                            lo valemos", no es un eslogan, es una misión de marca.</p>
+                    </div>
+                    <div class="col-12">
+                        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button style="border-color: #d952a5;" class="nav-link active" id="shades-tab"
+                                    data-bs-toggle="tab" data-bs-target="#shades" type="button" role="tab"
+                                    aria-controls="shades" aria-selected="true">Sombras</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button style="border-color: #d952a5;" class="nav-link" id="glazes-tab"
+                                    data-bs-toggle="tab" data-bs-target="#glazes" type="button" role="tab"
+                                    aria-controls="glazes" aria-selected="false">Esmaltes</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button style="border-color: #d952a5;" class="nav-link" id="lash-tab"
+                                    data-bs-toggle="tab" data-bs-target="#lash" type="button" role="tab"
+                                    aria-controls="lash" aria-selected="false">Pestañas</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="shades" role="tabpanel"
+                                aria-labelledby="shades-tab">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 mb-3_1"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/paleta-1.webp" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">EmaaDu</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a  id="a1" href="#">Sombra De Ojos Maquillaje Larga Duración</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3_2"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/paleta-2.webp" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">GLAZZI</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a  id="a1" href="#"> Sombras de Ojos Glitter & Shimmer, 99 Colores</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3_3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/paleta-3.jpg" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">LAMEYLA</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a id="a1" href="#">Sombra De Ojos Impermeable Natural</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3_4"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/paleta-4.jpg" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">IGOODCO</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a id="a1" href="#">Sombra De Ojos Brillo Mate y Metalizados</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="glazes" role="tabpanel" aria-labelledby="glazes-tab">
+                                <div class="row">
+                                    <div id="col1" class="col-md-3 col-sm-6 mb-3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/Esmalte1.jpg" class="img-fluid" style="height:241px" ;>
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">MELINE</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a id="a1" href="#">Esmaltes Semipermanentes Meline</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="col1" class="col-md-3 col-sm-6 mb-3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/Esmalte2.jpg" class="img-fluid" style="height: 241px;">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">MELINE</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a  id="a1" href="#">Kit 4 Esmaltes Semipermanentes Meliné</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/Esmalte3.jpg" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">CHARM LIMIT</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a   id="a1" href="#">Kit De X3 Esmaltes Semipermanent
+                                                    Top,base,primer,removedor</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/Esmalte4.jpg" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">ANNICO</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a   id="a1" href="#">Esmalte Semipermanente Gel UV LED, 42pcs</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="lash" role="tabpanel" aria-labelledby="lash-tab">
+                                <div class="row">
+                                    <div  id="col2" class="col-md-3 col-sm-6 mb-3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/pestanias-1.jpg" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Mink Eyelashes</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a   id="a1" href="#">Set Pestañas Postizas Impermeable Forma De C Efectos 6D </a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/pestanias-2.jpg" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">MARISCA</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title text-capitalize text-dark">
+                                                <a  id="a1" href="# "> Set Pestañas Postizas Simil naturales Residuos En Forma de
+                                                    D Efectos 3D </a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span
+                                                        class="money">$300.00</span>
+                                                </inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="col2" class="col-md-3 col-sm-6 mb-3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/pestanias-3.jpg" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">TEAYASON</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a  id="a1" href="#"> Set Pestañas postizas Simil naturales import Forma De C
+                                                    Efectos 4D</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="col2" class="col-md-3 col-sm-6 mb-3"
+                                        style="background-color: #BF127C;padding: 22px;">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="/Asset/pestanias-4.webp" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">AYRMILLA</a>
+                                                <a href="#" class="wishlish">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a  id="a1" href="#"> Set Pestañas postizas dramáticas naturales Forma De D
+                                                    Efectos 5D</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <inst><span class="money">$300.00</span></inst>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"> <i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- new-revenue -->
+    <section id="new-revenue" class="py-5" style="background-color: papayawhip;">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Nuevos Ingresos</h2>
+            </div>
+            <div class="new-revenue-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="new-revenue-img position-relative overflow-hidden">
+                        <img src="/Asset/base.webp" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                        <span><i class="fa fa-heart" id="heart"></i></span>
+                    </div>
+                    <div class="text-center" style="margin-top: -41px;">
+                        <p class="text-capitalize mt-3 mb-1">O.TWO.O</p>
+                        <p class="text-capitalize mt-3 mb-1">Base Liquida</p>
+                    </div>
+                    <span id="span"class="fw-bold d-block">$500</span>
+                    <a href="#"  id="button" class="btn btn-primary mt-3">Comprar Producto</a>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="new-revenue-img position-relative overflow-hidden">
+                        <img src="/Asset/mascaradepestanias.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                        <span><i class="fa fa-heart" id="heart"></i></span>
+                    </div>
+                    <div class="text-center" style="margin-top: -41px;">
+                        <p class="text-capitalize mt-3 mb-1">QIBEST</p>
+                        <p class="text-capitalize mt-3 mb-1">Mascara Pestañas </p>
+                    </div>
+                    <span id="span" class="fw-bold d-block">$500</span>
+                    <a href="#" id="button"  class="btn btn-primary mt-3">Comprar Producto</a>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="new-revenue-img position-relative overflow-hidden">
+                        <img src="/Asset/mascarilla.webp" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                        <span><i class="fa fa-heart" id="heart"></i></span>
+                    </div>
+                    <div class="text-center" style="margin-top: -41px;">
+                        <p class="text-capitalize mt-3 mb-1">ROREC</p>
+                        <p class="text-capitalize mt-3 mb-1">Mascarilla Frutales </p>
+                    </div>
+                    <span id="span"class="fw-bold d-block">$500</span>
+                    <a href="#"  id="button" class="btn btn-primary mt-3">Comprar Producto</a>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="new-revenue-img position-relative overflow-hidden">
+                        <img src="/Asset/labiales.webp" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                        <span><i class="fa fa-heart" id="heart"></i></span>
+                    </div>
+                    <div class="text-center" style="margin-top: -41px;">
+                        <p class="text-capitalize mt-3 mb-1">HANDAIYAN</p>
+                        <p class="text-capitalize mt-3 mb-1">Labiales Matte</p>
+                    </div>
+                    <span id="span"class="fw-bold d-block">$500</span>
+                    <a href="#" id="button" class="btn btn-primary mt-3">Comprar Producto</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+
+    <!-- offers-->
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div class="row d-flex align-items-center text-center justify-content-lg-start">
+                <div class="offers-content">
+                    <span class="text-white">descuentos hasta un 25%</span>
+                    <h2 class="mt-2 mb-4 text-white">¡Gran oferta de venta!</h2>
+                    <a href="#" id="a_1" class="btn ">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of offers -->
+
+    <!-- blogs -->
+
+    <section id="blog" class="py-5" style="background-color: papayawhip;">
+        <div class="container">
+            <div class="title text-center py--5">
+                <h2 class="position-relative d-inline-block" id="blog" style="
+                padding: 9px">Referencias</h2>
+            </div>
+            <div class="row g-3">
+                <div class="card boder-0  col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="/Asset/referencia.jpg" style="height: 400px;">
+                    <div class="card-body px-0">
+                        <h4 class="card_title" style="padding-left: 124px;">Clienta</h4>
+                        <p class="card-text mt-3 text-muted">Excelente la calidad de los productos y la atencion muy
+                            buena y atenta,los mejores precios y facil de obtenerlos y los envios llegan super rapidos y
+                            la presentacion de la caja en la que viene su enpaque es hermosa la elegiria una y mil
+                            veces.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span>Natali Onix
+                            </small>
+                        </p>
+                        <a href="# text-muted" id="a" class="btn">Leer Mas</a>
+                    </div>
+                </div>
+                <div class="card boder-0  col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="/Asset/referencia1.jpg" style="height: 400px;">
+                    <div class="card-body px-0">
+                        <h4 class="card_title" style="padding-left: 124px;">Clienta</h4>
+                        <p class="card-text mt-3 text-muted">Excelente la calidad de los productos y la atencion muy
+                            buena y atenta,los mejores precios y facil de obtenerlos y los envios llegan super rapidos y
+                            la presentacion de la caja en la que viene su enpaque es hermosa la elegiria una y mil
+                            veces. </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span>Roxana Yamiri
+                            </small>
+                        </p>
+                        <a href="# text-muted" id="a"class="btn" >Leer Mas</a>
+                    </div>
+                </div>
+                <!-- poner en el style en modo celular padding:23px; margin:13px; -->
+                <div class="card boder-0  col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="/Asset/referencia2.jpg" style="height: 400px;">
+                    <div class="card-body px-0">
+                        <h4 class="card_title" style="padding-left: 124px;">Clienta</h4>
+                        <p class="card-text mt-3 text-muted">Excelente la calidad de los productos y la atencion muy
+                            buena y atenta,los mejores precios y facil de obtenerlos y los envios llegan super rapidos y
+                            la presentacion de la caja en la que viene su enpaque es hermosa la elegiria una y mil
+                            veces.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span>Violeta Quirli
+                            </small>
+                        </p>
+                        <a href="# text-muted"id="a" class="btn">Leer Mas</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- blogs -->
+    <section id="about" class="py-5" style="background-color: papayawhip;">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4" style="padding: 9px">Sobre Nosotras</h2>
+                        <p class="lead text-muted">Nuestra Mision.</p>
+                        <p class="">Bellisima Makeup cree en la verdadera belleza, sin estereotipos, viviendo con
+                            empoderamiento y celebrando nuestras diferencias.
+                            Cada día ayudamos a construir una comunidad donde se respeta la diversidad, los gustos y los
+                            pensamientos, además con la firme convicción de que el maquillaje y en sí la belleza, solo
+                            es una forma de expresión para sentirnos bien y felices.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="/Asset/portada.jpg" alt="" class="img-fluid" style="height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+    <!-- newsletter -->
+    <section id="newsletter" class="py-5" style="background-color: papayawhip;">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Boletín de Suscripción</h2>
+                </div>
+                <p class="text-center text-muted">Recibi Novedades De Nuestros Productos Te Traemos Las Mejores Marcas y
+                    Calidad Libre de Crueldad Animal.</p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Ingrese Su E-mail..." required="email">
+                    <button class="btn" type="submit" style="margin-left: 0px !important;">Suscribirte</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+    <!-- footer -->
+    <footer id="footer" class="Footer">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Bellisima
+                        MakeUp</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul>
+                        <li class="my-3">
+                            <a href="#header" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right me-1">Inicio</i>
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#products" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right me-1">Los mas Vendidos</i>
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#new-revenue" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right me-1">Nuevos Ingresos</i>
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#offers" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right me-1">Descuentos</i>
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#blog" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right me-1">Referencias </i>
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#about" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right me-1">Sobre nosotras </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3" style="line-height: 40px;">
+                    <h5 class="fw-light ">Contactanos</h5>
+                    <div id="contacto" class="d-flex justify-content-start align-content-starr my-2 ">
+                        <span clas="me-3">
+                            <i class="fa-solid fa-map-location-dot" style="margin: 10px;"></i>
+                        </span>
+                        <span class="fw-light" style="margin-top: 7px;">Santa Lujan,Rosario,AL567 </span>
+                    </div>
+                    <div id="contacto" class="d-flex justify-content-start align-content-starr my-2 ">
+                        <span clas="me-3">
+                            <i class="fas fa-envelope" style="margin: 10px;"></i>
+                        </span>
+                        <span class="fw-light" style=" margin-top:7px;">belenaguirre2422000@gmail.com </span>
+                    </div>
+                    <div id="contacto" class="d-flex justify-content-start align-content-starr my-2 ">
+                        <span clas="me-3">
+                            <i class="fas fa-phone-alt" style="margin: 10px;"></i>
+                        </span>
+                        <span class="fw-light" style=" margin-top:7px;">+549 3415320077 </span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" style="line-height: 41px;padding-left: 74px;">
+                    <h5 class="fw-light mb-3 "> Nuestras Redes</h5>
+                    <div class="d-flex">
+                        <ul class="list-unstyled">
+                            <li style="margin: 10px;">
+                                <a href="https://mobile.facebook.com/profile.php?id=100034489132631&_rdc=1&_rdr" target="_blank"  class="text=white text=decoration-none">
+                                    <i class="fa fa-facebook-f">Facebook</i>
+                                </a>
+                            </li>
+                            <li style="margin: 10px;">
+                                <a href="https://www.instagram.com/belenaguirrer451/" target="_blank"  class="text=white text=decoration-none">
+                                    <i class="fa-brands fa-instagram">Instagram</i>
+                                </a>
+                            </li>
+                            <li style="margin: 10px;">
+                                <a href="https://api.whatsapp.com/send?phone=3415320077&text=hola,%20qué%20tal?" target="_blank"  class="text=white text=decoration-none">
+                                    <i class="fa-brands fa-whatsapp">Whatsapp</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <!-- end of footer -->
+
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- Js Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <!-- own js -->
+    <script src="js/script.js"></script>
+</body>
